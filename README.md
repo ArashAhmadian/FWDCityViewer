@@ -1,12 +1,16 @@
 # FWDCityViewer
+
+![DEMO](/pictures/DEMO.gif)
 ![GitHubStats](/pictures/githubStats1.png)<br/>
+
 A map application written in C++ from a very low level API reading from an OpenStreetMaps database<br/>
-Note: because this was a University project, the source code is not and will not be public
+Note: because this was a University project, the source code cannot be posted on GitHub, contact me if you wish to view the source code. 
 ## Features
 ### Technical Features
-* Read data from Open Street Map database (subways)
+* Read data from Open Street Map database
+* Read weather data using Open-Weather APT and parse relevant results
 * Navigation route calculations between 2 points 
-* Read data from OpenWeather API using WebCurl upon user request
+* Read data from OpenWeather API using libbCurl upon user request
 * Navigation routes for a Car and a combination of Car and Walking
 * Dijkstra's Algorithm with A* search optimization
   * (Single-Source, Single Destination) + (Multiple-Source, Single Destination) + (Single-Source, Multiple Destination) were all implemented for different versions of the pathfinding problem
@@ -25,9 +29,10 @@ Note: because this was a University project, the source code is not and will not
 * Distinction between geographic features such as water, parks, beaches, etc.
 ### User Interface and Interaction Features
 * Intuitive map selection
+* Weather data display 
 * Auto-correct of search 
 * Autocomplete of search if partially filled in
-* Ability to toggle information: Dark mode, one way streets, subway stops, points of interest
+* Ability to see information: one way streets, subway stops, points of interest, weather data 
 * Points of interest categorized and shown with custom icons
 * Zooming in/out
 * Panning around
@@ -61,8 +66,7 @@ First, our application generates a few "good" initial solutions using a greedy a
 This application was built to run on a Linux machine (it's been tested on Debian and Ubuntu). It makes use of the following libraries:
 * GTK+ 3
 * OpenMP
-* WebCurl
+* libCurl
 
-## DEMO
-![DEMO](/pictures/DEMO.gif)
+
 
